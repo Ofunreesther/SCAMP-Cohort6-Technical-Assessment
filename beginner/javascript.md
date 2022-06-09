@@ -18,4 +18,43 @@ Note: A prime number(or a prime) is a positive integer that is only divisible by
 
 - submit the URL on the application form here: [Cohort 6 Application](http://shecodeafrica.org/events) 
 
+
+
+
+
+
+
 *Good luck!*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function isPrime(num) {
+    if (num < 2)
+       return false
+    else if (num === 2) {
+        return true
+    }
+    else {
+        for(let i = 2; i < num ; i++) {
+            if(num % i === 0) {
+                return false
+            }
+        }
+        return true
+    } 
+}
